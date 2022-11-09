@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main" style="height: 2000px">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="detail.html">gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end -->
+
+      <!-- text -->
+      <div class="texts col-8 m-auto">
+        <!-- form -->
+        <div class="order">
+          <form action="" method="" id="myForm">
+            <label for="First Name">First Name</label>
+            <input type="text" name="First Name" /><br /><br />
+            <label for="Last name">Last Name</label>
+            <input type="text" name="Last Name" />
+            <br />
+            <br />
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" />
+            <br />
+            <br />
+            <label for="phone">Your number (### ### ####):</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}[\s-]+[0-9]{3}[\s-]+[0-9]{4}"
+            />
+            <br /><br />
+            <label for="url"> Your Url:</label>
+            <input type="url" name="url" />
+            <br />
+            <br />
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" /> <br /><br />
+            <button type="submit" form="myForm" value="Submit">Submit</button>
+            <input type="reset" form="myForm" value="reset" />
+          </form>
+        </div>
+        <!-- formend -->
+
+        <!-- contact -->
+        <div class="contact"></div>
+
+        <div class="line"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://zintismay.github.io/form-reader/formReader.js"></script>
+</html>

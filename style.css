@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(8, 24, 53);
+}
+
+.main {
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.card-title:hover {
+  color: brown;
+  font-size: 25px;
+}
+
+.line {
+  padding: auto;
+  width: 150px;
+  height: 150px;
+  color: black;
+}
+
+.about {
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+  height: 100%;
+}
